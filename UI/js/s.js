@@ -49,4 +49,5 @@ document.getElementById('upload-form').addEventListener('submit', async function
 });
 
 function predict() {
+    
 }
