@@ -31,6 +31,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
     formData.append('image', fileInput.files[0]);
 
     try {
+
         const response = await fetch('http://10.25.2.12:5001/predict', {
             method: 'POST',
             body: formData
@@ -49,4 +50,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
 });
 
 function predict() {
+
+    
+
 }
