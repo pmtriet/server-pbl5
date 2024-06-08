@@ -32,7 +32,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
 
     try {
 
-        const response = await fetch('http://10.25.2.12:5001/predict', {
+        const response = await fetch('http://192.168.1.207:5001/predict', {
             method: 'POST',
             body: formData
         });
