@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PBL5: Flower Recognition</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="title">PBL5: Flower Recognition</div>
+
+        <div class="button-container">
+            <button onclick="takeAPic()">Take a picture</button>
+            <button onclick="chooseAnImage()">Choose an image</button>
+        </div>
+
+        <video id="camera" width="320" height="240" autoplay></video>
+
+        <button id="predict" onclick="predict()" style="display: none;">Predict</button>
+
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="image" accept="image/*">
+            <button type="submit">Upload and Predict</button>
+        </form>
+        <div id="result"></div>
+
+    </div>
+
+    <script src="js/s.js"></script>
+</body>
+</html>
